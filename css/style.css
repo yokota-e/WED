@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* 共通 */
+body{
+    background-color: #f0f0f0;
+    font-size: 14px;
+
+}
+
+img{
+    width: 100%;
+}
+
+.c-logo{
+width: clamp(5rem, 4.543rem + 1.951vw, 6.25rem);
+}
+
+h2{
+    font-size: 36px;
+    letter-spacing: 1rem;
+}
+
+/* レイアウト */
+.l-wrapper{
+    width: min(1000px,70%);
+    margin-inline: auto;
+}
+
+/* ヘッダー */
+
+
+/* ニュース */
+
+
+/* 私たちについて */
+
+
+/* 事業内容 */
+
+
+/* 会社情報 */
+.l-company{
+    position: relative;
+    background-color: #fff;
+ 
+}
+
+.l-company::after{
+    position: absolute;
+    right: 0;
+    content: "";
+    background: url('../img/company.png') no-repeat center center/cover;
+    height: 400px;
+    width: 100%;
+    display: inline-block;
+}
+
+/* フッター */
+.l-footer{
+       background-color: #fff;
+}
+
+
+/* レスポンシブ：ブレークポイントは900px */
+@media (min-width: 900px){
+    .l-company::after{
+    width:min(60%,547px);
+    top:111px;
+    }
+}
