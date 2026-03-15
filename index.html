@@ -1,118 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WED</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.1/destyle.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.1/destyle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="l-header">
-
-        <h1><img src="../img/logo.png" alt="WED" class="c-logo"></h1>
-        <ul class="l-nav">
+      <div class="l-header-inner">
+        <h1><img src="./img/logo.png" alt="WED" class="l-logo" /></h1>
+        <div class="l-headerlink">
+          <ul class="l-nav">
             <li><a href="../news.html">NEWS</a></li>
             <li><a href="#ABOUT">ABOUT</a></li>
             <li><a href="#BUSINESS">BUSINESS</a></li>
             <li><a href="#COMPANY">COMPANY</a></li>
-        </ul>
-        <a href="../contact.html">お問い合わせ</a>
-
+          </ul>
+          <a href="../contact.html" class="c-contact">お問い合わせ</a>
+        </div>
+      </div>
     </header>
     <main class="l-main l-wrapper">
-        <div class="c-mv">
-            <img src="./img/mainvisual 1.png" alt="">
-        </div>
+      <section class="l-news l-section" id="NEWS">
+        <h2 data-sub="NEWS" class="l-title c-title">ニュース</h2>
+        <ul>
+          <li class="c-news">
+            <time datetime="2021-01-01">2021.01.01</time>
+            <p>NEWS</p>
+            <p>タイトルタイトルタイトルタイトル</p>
+          </li>
+          <li class="c-news">
+            <time datetime="2021-01-01">2021.01.01</time>
+            <p>PRESS</p>
+            <p>タイトルタイトルタイトルタイトル</p>
+          </li>
+          <li class="c-news">
+            <time datetime="2021-01-01">2021.01.01</time>
+            <p>NEWS</p>
+            <p>タイトルタイトルタイトルタイトル</p>
+          </li>
+        </ul>
+      </section>
 
-        <section class="l-news" id="NEWS">
-            <h2 data-sub="NEWS" class="l-title  c-title">ニュース</h2>
-            <ul>
-                <li class="c-news">
-                    <time datetime="2021-01-01">2021.01.01</time>
-                    <p>NEWS</p>
-                    <p>タイトルタイトルタイトルタイトル</p>
-                </li>
-                <li class="c-news">
-                    <time datetime="2021-01-01">2021.01.01</time>
-                    <p>PRESS</p>
-                    <p>タイトルタイトルタイトルタイトル</p>
-                </li>
-                <li class="c-news">
-                    <time datetime="2021-01-01">2021.01.01</time>
-                    <p>NEWS</p>
-                    <p>タイトルタイトルタイトルタイトル</p>
-                </li>
-            </ul>
-        </section>
+      <section class="l-about" id="ABOUT">
+        <h2 data-sub="ABOUT" class="l-title c-title">私たちについて</h2>
+        <p>
+          テキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキスト
+          テキストテキストテキストテキストテキストテキスト
+        </p>
+      </section>
 
-        <section class="l-about" id="ABOUT">
-            <h2 data-sub="ABOUT" class="l-title  c-title">私たちについて</h2>
-            <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト
-                テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト
-                テキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキスト</p>
-        </section>
+      <section class="l-business l-section" id="BUSINESS">
+        <h2 data-sub="BUSINESS">事業内容</h2>
+        <ul>
+          <li>
+            <p>Web制作・マーケティング</p>
+            <img src="./img/business1.png" alt="" />
+          </li>
+          <li>
+            <p>インターネットメディア事業</p>
+            <img src="./img/business2.png" alt="" />
+          </li>
+          <li>
+            <p>プロモーション企画・制作</p>
+            <img src="./img/business3.png" alt="" />
+          </li>
+          <li>
+            <p>ソーシャル企画・運営</p>
+            <img src="./img/business4.png" alt="" />
+          </li>
+        </ul>
+      </section>
 
-        <section class="l-business" id="BUSINESS">
-            <h2 data-sub="BUSINESS">事業内容</h2>
-            <ul>
-                <li>
-                    <p>Web制作・マーケティング</p>
-                    <img src="./img/business1.png" alt="">
-                </li>
-                <li>
-                    <p>インターネットメディア事業</p>
-                    <img src="./img/business2.png" alt="">
-                </li>
-                <li>
-                    <p>プロモーション企画・制作</p>
-                    <img src="./img/business3.png" alt="">
-                </li>
-                <li>
-                    <p>ソーシャル企画・運営</p>
-                    <img src="./img/business4.png" alt="">
-                </li>
-            </ul>
-        </section>
-
-        <section class="l-company" id="COMPANY">
-            <h2 data-sub="COMPANY" class="l-title  c-title">会社情報</h2>
+      <section class="l-company l-section" id="COMPANY">
+        <div class="c-company">
+          <h2 data-sub="COMPANY" class="l-title c-title">会社情報</h2>
+          <div class="c-company__cnt">
             <dl>
-                <dt>会社名</dt>
-                <dd>ウェブエンターテイメントデザイン株式会社</dd>
-                <dt>所在地</dt>
-                <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
-                <dt>代表</dt>
-                <dd>XXXXXX</dd>
-                <dt>設立</dt>
-                <dd>2021年1月1日</dd>
-                <dt>資本金</dt>
-                <dd>3,000,000円</dd>
-                <dt>事業内容</dt>
-                <dd>Web制作・マーケティング</dd>
-                <dd>インターネットメディア事業</dd>
-                <dd>プロモーション企画・制作</dd>
-                <dd>ソーシャル企画・運営</dd>
+              <dt>会社名</dt>
+              <dd>ウェブエンターテイメントデザイン株式会社</dd>
+              <dt>所在地</dt>
+              <dd>東京都渋谷区桜丘町99-9 West Building 3F</dd>
+              <dt>代表</dt>
+              <dd>XXXXXX</dd>
+              <dt>設立</dt>
+              <dd>2021年1月1日</dd>
+              <dt>資本金</dt>
+              <dd>3,000,000円</dd>
+              <dt>事業内容</dt>
+              <dd>Web制作・マーケティング</dd>
+              <dd>インターネットメディア事業</dd>
+              <dd>プロモーション企画・制作</dd>
+              <dd>ソーシャル企画・運営</dd>
             </dl>
 
-        </section>
+            <img
+              src="./img/company.png"
+              alt="女性2名が座ってパソコン作業を使用している、解放感のあるオフィス内の様子"
+              class="c-company__img"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="l-footer">
-        <img src="./img/logo.png" alt="WED" class="c-logo">
-        <address>
-            <p>
-                Web Entertainment Design Inc.
-                West Building 3F
-                9-99 Sakuragaokacho Shibuya-ku
-                Tokyo, Japan 150-0031
-                T/99-9999-9999
-            </p>
-        </address>
-        <small>© Web Entertainment Design Inc.</small>
+      <img src="./img/logo.png" alt="WED" class="c-logo" />
+      <address>
+        <p>
+          Web Entertainment Design Inc. West Building 3F 9-99 Sakuragaokacho
+          Shibuya-ku Tokyo, Japan 150-0031 T/99-9999-9999
+        </p>
+      </address>
+      <small>© Web Entertainment Design Inc.</small>
     </footer>
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
