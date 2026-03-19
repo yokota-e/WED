@@ -65,12 +65,15 @@ img {
 .l-header-inner {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 8px;
 }
 
 .l-headerlink {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .l-nav {
@@ -188,12 +191,30 @@ img {
 .l-footer {
   background-color: #fff;
   padding-block-start: 48px;
+
+}
+
+.l-footer__cnt {
+  padding-block-end: 60px;
+}
+
+.l-footer__cnt__address {
+  margin-block-start: 10px;
+}
+
+.c-logo {
+  height: clamp(1.25rem, 1.140rem + 0.469vw, 1.563rem);
+  width: auto;
 }
 
 /* レスポンシブ：ブレークポイントは900px */
 @media (min-width: 900px) {
   .l-header-inner {
     flex-direction: row;
+  }
+
+  .l-logo {
+    padding-block-start: 0;
   }
 
   .c-contact {
@@ -247,5 +268,18 @@ img {
   .l-footer {
     background-color: #fff;
     padding-block-start: 48px;
+
+
   }
+
+  .l-footer__cnt {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .l-footer__cnt__address {
+    margin-block-start: 0px;
+  }
+
 }
