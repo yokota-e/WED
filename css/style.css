@@ -65,7 +65,7 @@ img {
 .l-header-inner {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
 }
 
@@ -161,7 +161,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 .c-company {
@@ -169,8 +168,6 @@ img {
   padding: 40px 20px;
   font-weight: 500;
 }
-
-
 
 .c-company__list {
   display: flex;
@@ -190,8 +187,7 @@ img {
 /* フッター */
 .l-footer {
   background-color: #fff;
-  padding-block-start: 48px;
-
+  padding-block: 48px 23px;
 }
 
 .l-footer__cnt {
@@ -203,7 +199,7 @@ img {
 }
 
 .c-logo {
-  height: clamp(1.25rem, 1.140rem + 0.469vw, 1.563rem);
+  height: clamp(1.25rem, 1.14rem + 0.469vw, 1.563rem);
   width: auto;
 }
 
@@ -211,6 +207,8 @@ img {
 @media (min-width: 900px) {
   .l-header-inner {
     flex-direction: row;
+    align-items: center;
+    column-gap: 60px;
   }
 
   .l-logo {
@@ -262,14 +260,11 @@ img {
     display: flex;
     flex-direction: column;
     gap: 14px;
-
   }
 
   .l-footer {
     background-color: #fff;
     padding-block-start: 48px;
-
-
   }
 
   .l-footer__cnt {
@@ -277,9 +272,7 @@ img {
     justify-content: space-between;
   }
 
-
   .l-footer__cnt__address {
     margin-block-start: 0px;
   }
-
 }
