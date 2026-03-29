@@ -227,6 +227,11 @@ img {
   width: auto;
 }
 
+/* お問い合わせページ */
+.c-contact__input {
+  background: #fff;
+}
+
 /* レスポンシブ：ブレークポイントは900px */
 @media (min-width: 900px) {
   .l-header-inner {
