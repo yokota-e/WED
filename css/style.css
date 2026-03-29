@@ -4,6 +4,7 @@
 body {
   background-color: #f0f0f0;
   font-size: 14px;
+  line-height: 2.2;
 }
 
 img {
@@ -133,13 +134,20 @@ img {
 
 .l-about::before {
   content: "";
-  background: url(../img/about.png) no-repeat top center/cover;
+  background: url(../img/about.png) no-repeat center center/cover;
   height: 300px;
-  width: 100%;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 /* 事業内容 */
-.l-business__list {
+.l-business__list,
+.l-business_list_pc_right,
+.l-business_list_pc_left {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -189,7 +197,6 @@ img {
 .c-company__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .c-company__desc {
@@ -258,6 +265,41 @@ img {
     height: 0px;
     width: 0px;
   }
+  .l-about {
+    flex-direction: row;
+    gap: 70px;
+    justify-content: space-between;
+  }
+  .l-about::before {
+    width: clamp(30rem, -0.208rem + 53.704vw, 48.125rem);
+    height: 400px;
+  }
+
+  .c-about {
+    width: clamp(21.438rem, 6.125rem + 27.222vw, 30.625rem);
+    padding-block-start: 180px;
+    margin-right: -70px;
+  }
+
+  .c-business {
+    width: clamp(20rem, 15rem + 8.889vw, 23rem);
+  }
+  .l-business__list {
+    flex-direction: row;
+    gap: min(64px, 20%);
+    justify-content: center;
+  }
+
+  .l-business_list_pc_right {
+    flex-direction: column;
+    gap: 50px;
+    margin-block-start: 80px;
+  }
+
+  .l-business_list_pc_left {
+    flex-direction: column;
+    gap: 50px;
+  }
 
   .c-contact {
     display: inline-block;
@@ -290,7 +332,7 @@ img {
 
   .c-company__img {
     position: absolute;
-    width: clamp(5rem, -5.277rem + 43.85vw, 34.188rem);
+    width: clamp(16.25rem, -13.646rem + 53.148vw, 34.188rem);
     right: 0;
     top: 111px;
     object-fit: cover;
