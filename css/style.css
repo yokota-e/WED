@@ -105,6 +105,23 @@ img {
   flex-direction: column;
   gap: 40px;
 }
+.l-news_link {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.c-news__subinfo {
+  display: flex;
+  gap: 18px;
+}
+.c-news__cat {
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  padding-inline: 8px;
+  padding-block: 4px;
+}
 
 /* 私たちについて */
 .l-about {
@@ -213,6 +230,33 @@ img {
 
   .l-logo {
     padding-block-start: 0;
+  }
+
+  .l-news__list {
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  .c-news {
+    display: flex;
+    gap: 20px;
+  }
+
+  .c-news::before {
+    content: "";
+    height: 81px;
+    width: 1px;
+    background: #000;
+  }
+
+  .c-news:first-of-type {
+    gap: 0px;
+  }
+
+  .c-news:first-of-type:before {
+    content: "";
+    height: 0px;
+    width: 0px;
   }
 
   .c-contact {
