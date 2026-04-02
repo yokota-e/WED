@@ -469,15 +469,25 @@ body:has(#news) .l-header::after {
     object-fit: cover;
   }
 
+  .c-company__list {
+    display: grid;
+  }
+
   .c-company__list__item {
     display: flex;
   }
 
-  .c-company__list__item__descs {
+  .c-company__title {
+    width: 80px;
+  }
+
+  .c-company__desc_list {}
+
+  /* dt+dd {
     display: flex;
     flex-direction: column;
     gap: 14px;
-  }
+  } */
 
   .l-footer {
     background-color: #fff;
