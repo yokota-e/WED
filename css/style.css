@@ -164,9 +164,27 @@ body:has(#news) .l-header::after {
 .l-tab {
   width: clamp(10.688rem, 9.169rem + 6.479vw, 15rem);
   padding-block-end: 24px;
-  border-bottom: solid 1px #000;
   text-align: center;
+}
 
+.c-tab {
+  border-bottom: solid 1px #000;
+}
+
+.c-tab-label {
+  display: block;
+}
+
+.c-tab-label:hover {
+  background: #ccc;
+}
+
+.c-tab_border {
+  border-bottom: solid 3px #000;
+}
+
+.is-hidden {
+  display: none;
 }
 
 
