@@ -47,6 +47,10 @@ img {
   margin-block-start: clamp(1.75rem, 1.486rem + 1.127vw, 2.5rem);
 }
 
+#news .c-title::after {
+  content: none;
+}
+
 /* ヘッダー */
 .l-header {
   height: 680px;
@@ -106,15 +110,28 @@ img {
   flex-direction: column;
   gap: 40px;
 }
+
 .l-news_link {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
+
+.l-news-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
 .c-news__subinfo {
   display: flex;
   gap: 18px;
 }
+
+.c-news__time {
+  line-height: 1.2;
+}
+
 .c-news__cat {
   background-color: #000;
   color: #fff;
@@ -122,6 +139,18 @@ img {
   font-size: 12px;
   padding-inline: 8px;
   padding-block: 4px;
+}
+
+/* NEWS個別ページ */
+.c-news_link {
+  border-bottom: 1px solid #ccc;
+  padding-block-end: clamp(3rem, 2.868rem + 0.563vw, 3.375rem);
+  ;
+}
+
+.c-news__title {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* 私たちについて */
@@ -164,7 +193,7 @@ img {
   height: 1px;
   width: 8px;
   background: #000;
-  margin-block-start: 8px;
+  margin-block-start: 16px;
   margin-inline-end: 10px;
 }
 
@@ -249,9 +278,18 @@ img {
     gap: 60px;
   }
 
+  #news .l-news__list {
+    flex-direction: column;
+    gap: 50px;
+  }
+
   .c-news {
     display: flex;
     gap: 20px;
+  }
+
+  #news .c-news {
+    flex-direction: column;
   }
 
   .c-news::before {
@@ -259,6 +297,10 @@ img {
     height: 81px;
     width: 1px;
     background: #000;
+  }
+
+  #news .c-news::before {
+    content: none;
   }
 
   .c-news:first-of-type {
@@ -270,11 +312,13 @@ img {
     height: 0px;
     width: 0px;
   }
+
   .l-about {
     flex-direction: row;
     gap: 70px;
     justify-content: space-between;
   }
+
   .l-about::before {
     width: clamp(30rem, -0.208rem + 53.704vw, 48.125rem);
     height: 400px;
@@ -289,6 +333,7 @@ img {
   .c-business {
     width: clamp(20rem, 15rem + 8.889vw, 23rem);
   }
+
   .l-business__list {
     flex-direction: row;
     gap: min(64px, 20%);
@@ -337,7 +382,7 @@ img {
 
   .c-company__img {
     position: absolute;
-    width: clamp(16.25rem, -13.646rem + 53.148vw, 34.188rem);
+    width: clamp(13.75rem, -20.312rem + 60.556vw, 34.188rem);
     right: 0;
     top: 111px;
     object-fit: cover;
