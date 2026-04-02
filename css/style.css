@@ -5,6 +5,7 @@ body {
   background-color: #f0f0f0;
   font-size: 14px;
   line-height: 2.2;
+  letter-spacing: 0.1em;
 }
 
 img {
@@ -47,7 +48,8 @@ img {
   margin-block-start: clamp(1.75rem, 1.486rem + 1.127vw, 2.5rem);
 }
 
-#news .c-title::after {
+#news .c-title::after,
+#contact .c-title::after {
   content: none;
 }
 
@@ -257,8 +259,42 @@ img {
 }
 
 /* お問い合わせページ */
+.l-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.l-contact-text {
+  margin-block-end: clamp(3rem, 2.648rem + 1.502vw, 4rem);
+  width: 100%;
+  ;
+}
+
+.l-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  margin-block-end: 30px;
+}
+
 .c-contact__input {
   background: #fff;
+  width: 100%;
+}
+
+.c-required::after {
+  content: "*[必須]";
+  color: #FF0000;
+  letter-spacing: 0.05em;
+}
+
+.c-btn-submit {
+  border: solid 1px #000;
+  width: 100px;
+  height: 37px;
+  text-align: center;
 }
 
 /* レスポンシブ：ブレークポイントは900px */
