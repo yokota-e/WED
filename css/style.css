@@ -69,6 +69,11 @@ img {
   width: 100%;
 }
 
+#contact .l-header::after {
+  content: none;
+  height: 0;
+}
+
 .l-header-inner {
   display: flex;
   flex-direction: column;
@@ -99,6 +104,10 @@ img {
   width: 100%;
   height: 600px;
   object-fit: cover;
+}
+
+#contact .c-mv {
+  height: 0;
 }
 
 .c-contact {
