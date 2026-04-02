@@ -62,6 +62,11 @@ img {
   justify-content: space-between;
 }
 
+body:has(#contact) .l-header,
+body:has(#news) .l-header {
+  height: 56px;
+}
+
 .l-header::after {
   content: "";
   background: url(../img/mainvisual\ 1.png) no-repeat top center/cover;
@@ -69,9 +74,11 @@ img {
   width: 100%;
 }
 
-#contact .l-header::after {
+body:has(#contact) .l-header::after,
+body:has(#news) .l-header::after {
   content: none;
   height: 0;
+  width: 0;
 }
 
 .l-header-inner {
@@ -106,9 +113,6 @@ img {
   object-fit: cover;
 }
 
-#contact .c-mv {
-  height: 0;
-}
 
 .c-contact {
   display: none;
