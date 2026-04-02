@@ -152,6 +152,20 @@ img {
   padding-block: 4px;
 }
 
+.l-tab-list {
+  display: flex;
+  margin-block-end: clamp(2.5rem, 2.280rem + 0.939vw, 3.125rem);
+}
+
+.l-tab {
+  width: clamp(10.688rem, 9.169rem + 6.479vw, 15rem);
+  padding-block-end: 24px;
+  border-bottom: solid 1px #000;
+  text-align: center;
+
+}
+
+
 /* NEWS個別ページ */
 .c-news_link {
   border-bottom: 1px solid #ccc;

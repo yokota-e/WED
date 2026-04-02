@@ -29,35 +29,85 @@
   <main class="l-main l-wrapper" id="news">
     <section class="l-news l-section">
       <h2 data-sub="News & Press" class="l-title c-title"></h2>
-      <ul class="l-news__list">
-        <li class="c-news">
-          <a href="news_detail.html" class="l-news_link c-news_link">
-            <div class="c-news__subinfo">
-              <time datetime="2021-01-01" class="c-news__time">2021.01.01</time>
-              <p class="c-news__cat">NEWS</p>
-            </div>
-            <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-          </a>
+      <!-- タブ -->
+      <ul class="l-tab-list" role="tablist">
+        <li class="l-tab" role='presentation'>
+          <input type="radio" id="tab-news" name="tab-radio" role="tab" class="c-tab-btn" value="news" checked>
+          <h2><label for="tab-news" class="c-tab-label" tabindex="0" aria-selected="true"
+              aria-controls="tab-news">ニュース</label></h2>
         </li>
-        <li class="c-news">
-          <a href="news_detail.html" class="l-news_link c-news_link">
-            <div class="c-news__subinfo">
-              <time datetime="2021-01-01" class="c-news__time">2021.01.01</time>
-              <p class="c-news__cat">NEWS</p>
-            </div>
-            <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-          </a>
-        </li>
-        <li class="c-news">
-          <a href="news_detail.html" class="l-news_link c-news_link">
-            <div class="c-news__subinfo">
-              <time datetime="2021-01-01" class="c-news__time">2021.01.01</time>
-              <p class="c-news__cat">NEWS</p>
-            </div>
-            <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
-          </a>
+        <li class="l-tab">
+          <input type="radio" id="tab-press" name="tab-radio" role="tab" class="c-tab-btn" value="press" checked>
+          <h2><label for="tab-press" class="c-tab-label" tabindex="-1" aria-selected="true"
+              aria-controls="tab-press">プレスリリース</label></h2>
         </li>
       </ul>
+
+      <!-- タブ中身　ニュース -->
+      <div role="tabpanel" aria-labelledby="tab-news" tabindex="0">
+        <ul class="l-news__list">
+          <li class="c-news">
+            <a href="news_detail.html" class="l-news_link c-news_link">
+              <div class="c-news__subinfo">
+                <time datetime="2021-01-01" class="c-news__time">2021.01.01</time>
+                <p class="c-news__cat">NEWS</p>
+              </div>
+              <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </a>
+          </li>
+          <li class="c-news">
+            <a href="news_detail.html" class="l-news_link c-news_link">
+              <div class="c-news__subinfo">
+                <time datetime="2021-01-01" class="c-news__time">2021.01.01</time>
+                <p class="c-news__cat">NEWS</p>
+              </div>
+              <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </a>
+          </li>
+          <li class="c-news">
+            <a href="news_detail.html" class="l-news_link c-news_link">
+              <div class="c-news__subinfo">
+                <time datetime="2021-01-01" class="c-news__time">2021.01.01</time>
+                <p class="c-news__cat">NEWS</p>
+              </div>
+              <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- タブ中身　プレスリリース -->
+      <div role="tabpanel" aria-labelledby="tab-press" tabindex="0" class="is-hidden">
+        <ul class="l-news__list">
+          <li class="c-news">
+            <a href="news_detail.html" class="l-news_link c-news_link">
+              <div class="c-news__subinfo">
+                <time datetime="2021-01-01" class="c-news__time">2021.01.01</time>
+                <p class="c-news__cat">NEWS</p>
+              </div>
+              <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </a>
+          </li>
+          <li class="c-news">
+            <a href="news_detail.html" class="l-news_link c-news_link">
+              <div class="c-news__subinfo">
+                <time datetime="2021-01-01" class="c-news__time">2021.01.01</time>
+                <p class="c-news__cat">NEWS</p>
+              </div>
+              <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </a>
+          </li>
+          <li class="c-news">
+            <a href="news_detail.html" class="l-news_link c-news_link">
+              <div class="c-news__subinfo">
+                <time datetime="2021-01-01" class="c-news__time">2021.01.01</time>
+                <p class="c-news__cat">NEWS</p>
+              </div>
+              <p>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="l-footer">
