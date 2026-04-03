@@ -29,16 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
 function changeTabs(e) {
     const target = e.currentTarget;
     const controlsId = target.getAttribute("aria-controls");
-    const panels = document.querySelectorAll('.l-tab');
+    const tabs = document.querySelectorAll('.c-tab-btn');
+
 
     if (!controlsId) return;
 
 
-    // 選択されているタブのみ下線を太くする
-    panels.forEach(p => {
-        p.classList.toggle('c-tab_border');
+    //タブの下線をリセット
+    tabs.forEach(t => {
+        t.classList.remove('c-tab_border');
     })
-
+    // 選択されているタブのみ下線を太くする
+    target.classList.add('c-tab_border');
 
     const parent = target.closest('[role="tablist"]');
     // section.l-news 内からパネルを探す
