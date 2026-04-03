@@ -37,10 +37,10 @@ function changeTabs(e) {
 
     //タブの下線をリセット
     tabs.forEach(t => {
-        t.classList.remove('c-tab_border');
+        t.classList.remove('c-tab__border');
     })
     // 選択されているタブのみ下線を太くする
-    target.classList.add('c-tab_border');
+    target.classList.add('c-tab__border');
 
     const parent = target.closest('[role="tablist"]');
     // section.l-news 内からパネルを探す
