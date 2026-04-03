@@ -163,8 +163,13 @@ body:has(#news) .l-header::after {
 
 .l-tab {
   width: clamp(10.688rem, 9.169rem + 6.479vw, 15rem);
-  padding-block-end: 24px;
   text-align: center;
+}
+
+.c-tab-btn {
+  display: block;
+  height: 57px;
+  width: 100%;
 }
 
 .c-tab {
@@ -474,14 +479,18 @@ body:has(#news) .l-header::after {
   }
 
   .c-company__list__item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    grid-template-rows: auto;
   }
 
   .c-company__title {
     width: 80px;
   }
 
-  .c-company__desc_list {}
+  .c-company__desc_list {
+    grid-column: 2/3;
+  }
 
   /* dt+dd {
     display: flex;
