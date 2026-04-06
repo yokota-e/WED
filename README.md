@@ -1,6 +1,8 @@
 ## 概要
 
 本サイトは、学習目的で作成したWebサイトです。
+Pagesリンク：
+https://yokota-e.github.io/WED/
 
 ## 参考元
 
